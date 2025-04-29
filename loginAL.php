@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows === 1) {
         $user = $result->fetch_assoc();
-        
+
         // Plain-text password comparison
         if ($password === $user['password']) {
             $_SESSION['user_id'] = $user['id'];
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 case 'Driver':
                     header("Location: driver_dashboardAL.php");
                     break;
-                case 'Inspector': // match exactly what's in your database
+                case 'Inspector':
                     header("Location: inspector_dashboardAL.php");
                     break;
                 case 'Packer':

@@ -28,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if username already exists
     $sql_check = "SELECT * FROM User_dataAL WHERE username = '$username'";
     $result = mysqli_query($conn, $sql_check);
-    
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['error'] = "Username already taken. Please choose another.";
         header("Location: registerAL.html");
