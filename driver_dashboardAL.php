@@ -288,6 +288,8 @@ try {
                     <th>Quantity</th>
                     <th>Weight</th>
                     <th>Farmer</th>
+                    <th>From</th>
+                    <th>To</th>
                     <th>Status</th>
                     <th>Shipping Time</th>
                     <th>Action</th>
@@ -301,6 +303,8 @@ try {
                     <td><?= htmlspecialchars($row['quantity']) ?></td>
                     <td><?= htmlspecialchars($row['weight']) ?></td>
                     <td><?= htmlspecialchars($row['farmer_name']) ?></td>
+                    <td><?= htmlspecialchars($row['from_location']) ?></td>
+                    <td><?= htmlspecialchars($row['to_location']) ?></td>
                     <td><?= htmlspecialchars($row['shipping_status']) ?></td>
                     <td><?= $row['shipping_time'] ? htmlspecialchars($row['shipping_time']) : 'Not Shipped' ?></td>
                     <td>
@@ -337,6 +341,8 @@ try {
                     <th>Quantity</th>
                     <th>Weight</th>
                     <th>Farmer</th>
+                    <th>From</th>
+                    <th>To</th>
                     <th>Status</th>
                     <th>Shipping Time</th>
                     <th>Action</th>
@@ -350,6 +356,8 @@ try {
                     <td><?= htmlspecialchars($row['quantity']) ?></td>
                     <td><?= htmlspecialchars($row['weight']) ?></td>
                     <td><?= htmlspecialchars($row['farmer_name']) ?></td>
+                    <td><?= htmlspecialchars($row['from_location']) ?></td>
+                    <td><?= htmlspecialchars($row['to_location']) ?></td>
                     <td><?= htmlspecialchars($row['shipping_status']) ?></td>
                     <td><?= $row['shipping_time'] ? htmlspecialchars($row['shipping_time']) : 'Not Shipped' ?></td>
                     <td>
